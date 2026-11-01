@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Noor-e-Islam</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu&family=Poppins:wght@400;600&display=swap">
+<style>
+:root{--g:#0b5d3b;--g2:#0e7a4d;--gold:#c9a227;--bg:#f7faf6;--card:#fff;--tx:#1d2b24;--mu:#5b6b62;--bd:#e3ebe2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a14;--card:#15251d;--tx:#e8f0ea;--mu:#9bb0a3;--bd:#24382d;--g:#1a8a5a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1a14;--card:#15251d;--tx:#e8f0ea;--mu:#9bb0a3;--bd:#24382d;--g:#1a8a5a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 Poppins,system-ui,sans-serif}
+header{background:linear-gradient(135deg,#0b5d3b,#0e7a4d);color:#fff;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;border-bottom:3px solid var(--gold)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#0b5d3b;z-index:10}
+.bar{max-width:1100px;margin:auto;display:flex;align-items:center;gap:10px;padding:10px 16px;flex-wrap:wrap}
+.logo{font:700 22px Amiri,serif;color:#fff;text-decoration:none;margin-right:auto}.logo span{color:var(--gold)}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;padding:6px 10px;border-radius:8px;font-size:14px}
+nav a.on,nav a:hover{background:rgba(255,255,255,.18);color:#ffe9a0}
+.sb{display:flex;gap:6px}.sb input{border:0;border-radius:20px;padding:7px 14px;width:150px;font:inherit;font-size:14px}
+.sb button,.tb{border:0;background:var(--gold);color:#222;border-radius:20px;padding:7px 12px;cursor:pointer;font:inherit;font-size:14px}
+main{max-width:1100px;margin:auto;padding:20px 16px 40px;animation:f .5s}
+@keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1}}
+.hero{text-align:center;color:#fff;border-radius:18px;padding:48px 18px;background:linear-gradient(rgba(11,93,59,.92),rgba(11,93,59,.92)),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 4l6 14 14-6-6 14 14 6-14 6 6 14-14-6-6 14-6-14-14 6 6-14-14-6 14-6-6-14 14 6z' fill='none' stroke='%23c9a227' stroke-opacity='.5'/%3E%3C/svg%3E")}
+.hero .bis{font:400 clamp(28px,6vw,44px) Amiri,serif;color:#ffe9a0}.hero h1{margin:6px 0;font-size:clamp(26px,5vw,40px)}
+.btn{display:inline-block;margin:6px;padding:10px 20px;border-radius:25px;background:var(--gold);color:#222;text-decoration:none;font-weight:600}
+h2{font-family:Amiri,serif;font-size:28px;color:var(--g);margin:28px 0 12px;border-bottom:2px solid var(--gold);display:inline-block}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.card.big{grid-column:1/-1}
+.ar{font:400 28px/2 Amiri,serif;direction:rtl;text-align:right;color:var(--g)}
+.ur{font:400 19px/2.1 "Noto Nastaliq Urdu",serif;direction:rtl;text-align:right;color:var(--tx)}
+.ref{color:var(--mu);font-size:13px}.en{margin:4px 0}
+.sh{margin-top:8px}
+.srf{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.srf a{display:block;padding:8px 10px;border:1px solid var(--bd);border-radius:10px;background:var(--card);color:var(--tx);text-decoration:none;font-size:14px}
+.srf a:hover{border-color:var(--gold)}.srf b{color:var(--gold);margin-right:6px}
+.nm{text-align:center}.nm .ar{text-align:center;font-size:30px;line-height:1.6}
+.tabs{margin:8px 0}.tabs button{border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:6px 14px;border-radius:20px;cursor:pointer;margin:2px}.tabs .on{background:var(--g);color:#fff}
+form{display:grid;gap:10px;max-width:520px}input,textarea{padding:10px;border:1px solid var(--bd);border-radius:10px;font:inherit;background:var(--card);color:var(--tx)}
+footer{background:#0b5d3b;color:#e8f0ea;text-align:center;padding:24px 16px;border-top:3px solid var(--gold);font-size:14px}footer a{color:#ffe9a0}
+body{-webkit-tap-highlight-color:transparent}.card{border-radius:18px}.btn:active,.tb:active,.card:active,.srf a:active{transform:scale(.97)}
+#tab{display:none;position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--card);border-top:1px solid var(--bd);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px));box-shadow:0 -4px 16px rgba(0,0,0,.1)}
+#tab a{flex:1;text-align:center;text-decoration:none;color:var(--mu);font-size:10px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 0;border-radius:12px;transition:.2s}
+#tab a i{font-style:normal;font-size:21px;line-height:1}
+#tab a.on{color:var(--g);background:rgba(201,162,39,.2);font-weight:600}
+@media(max-width:768px){nav{display:none}#tab{display:flex}.bar{flex-wrap:nowrap;padding:8px 14px}.logo{font-size:20px}.sb input{width:105px;font-size:16px}main{padding-bottom:90px}footer{padding-bottom:90px}.hero{padding:36px 14px;border-radius:22px}h2{font-size:24px}}
+</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0b5d3b"><link rel="apple-touch-icon" href="icon-192.png"></head><body>
+<header><div class="bar"><a class="logo" href="#home">☪ Noor-e-<span>Islam</span></a>
+<nav id="nav"></nav>
+<div class="sb"><input id="q" placeholder="Search…" aria-label="Search"><button onclick="go()">Go</button><button class="tb" onclick="th()" aria-label="Theme">◐</button></div></div></header>
+<main id="app"></main><div id="tab"></div>
+<footer><div style="font:24px Amiri,serif;color:#ffe9a0">بسم اللہ الرحمن الرحیم</div>
+<p>© 2026 Noor-e-Islam — Spreading authentic Islamic knowledge.<br>Quran and Hadith texts should be verified with scholars and trusted editions.<br>Contact: <a href="https://wa.me/923348853466" target="_blank" rel="noopener">WhatsApp 0334 8853466</a></p></footer>
+<script>
+const P=[["home","Home"],["quran","Quran"],["hadith","Hadith"],["duas","Duas"],["articles","Articles"],["names","99 Names"],["contact","Contact"]];
+const S="Al-Fatihah,Al-Baqarah,Aal-e-Imran,An-Nisa,Al-Ma’idah,Al-An’am,Al-A’raf,Al-Anfal,At-Tawbah,Yunus,Hud,Yusuf,Ar-Ra’d,Ibrahim,Al-Hijr,An-Nahl,Al-Isra,Al-Kahf,Maryam,Ta-Ha,Al-Anbiya,Al-Hajj,Al-Mu’minun,An-Nur,Al-Furqan,Ash-Shu’ara,An-Naml,Al-Qasas,Al-Ankabut,Ar-Rum,Luqman,As-Sajdah,Al-Ahzab,Saba,Fatir,Ya-Sin,As-Saffat,Sad,Az-Zumar,Ghafir,Fussilat,Ash-Shura,Az-Zukhruf,Ad-Dukhan,Al-Jathiyah,Al-Ahqaf,Muhammad,Al-Fath,Al-Hujurat,Qaf,Adh-Dhariyat,At-Tur,An-Najm,Al-Qamar,Ar-Rahman,Al-Waqi’ah,Al-Hadid,Al-Mujadila,Al-Hashr,Al-Mumtahanah,As-Saff,Al-Jumu’ah,Al-Munafiqun,At-Taghabun,At-Talaq,At-Tahrim,Al-Mulk,Al-Qalam,Al-Haqqah,Al-Ma’arij,Nuh,Al-Jinn,Al-Muzzammil,Al-Muddaththir,Al-Qiyamah,Al-Insan,Al-Mursalat,An-Naba,An-Nazi’at,Abasa,At-Takwir,Al-Infitar,Al-Mutaffifin,Al-Inshiqaq,Al-Buruj,At-Tariq,Al-A’la,Al-Ghashiyah,Al-Fajr,Al-Balad,Ash-Shams,Al-Layl,Ad-Duha,Ash-Sharh,At-Tin,Al-Alaq,Al-Qadr,Al-Bayyinah,Az-Zalzalah,Al-Adiyat,Al-Qari’ah,At-Takathur,Al-Asr,Al-Humazah,Al-Fil,Quraysh,Al-Ma’un,Al-Kawthar,Al-Kafirun,An-Nasr,Al-Masad,Al-Ikhlas,Al-Falaq,An-Nas".split(",");
+const Q=[["Surah Al-Fatihah (1)",["بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ|In the name of Allah, the Most Gracious, the Most Merciful.|شروع اللہ کے نام سے جو بڑا مہربان نہایت رحم والا ہے",
+"الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ|All praise is for Allah, Lord of all the worlds.|سب تعریف اللہ کے لیے ہے جو سب جہانوں کا پالنے والا ہے",
+"الرَّحْمَٰنِ الرَّحِيمِ|The Most Gracious, the Most Merciful.|نہایت مہربان، بہت رحم والا",
+"مَالِكِ يَوْمِ الدِّينِ|Master of the Day of Judgement.|روزِ جزا کا مالک",
+"إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ|You alone we worship, and You alone we ask for help.|ہم تیری ہی عبادت کرتے ہیں اور تجھی سے مدد مانگتے ہیں",
+"اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ|Guide us to the straight path.|ہمیں سیدھے راستے پر چلا",
+"صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ|The path of those You have blessed, not of those who earned anger, nor of those who went astray.|ان لوگوں کے راستے پر جن پر تو نے انعام کیا، نہ ان کے جن پر غضب ہوا اور نہ گمراہوں کے"]],
+["Surah Al-Ikhlas (112)",["قُلْ هُوَ اللَّهُ أَحَدٌ|Say: He is Allah, the One.|کہہ دو وہ اللہ ایک ہے",
+"اللَّهُ الصَّمَدُ|Allah, the Eternal Refuge.|اللہ بے نیاز ہے",
+"لَمْ يَلِدْ وَلَمْ يُولَدْ|He neither begets nor was begotten.|نہ اس نے کسی کو جنا اور نہ وہ جنا گیا",
+"وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ|And there is none comparable to Him.|اور کوئی اس کا ہمسر نہیں"]]];
+const H=[
+["إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ","Actions are judged by intentions.","اعمال کا دارومدار نیتوں پر ہے۔","Sahih al-Bukhari 1; Sahih Muslim 1907"],
+["لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ","None of you truly believes until he loves for his brother what he loves for himself.","تم میں سے کوئی مومن نہیں ہو سکتا جب تک اپنے بھائی کے لیے وہی پسند نہ کرے جو اپنے لیے پسند کرتا ہے۔","Sahih al-Bukhari 13; Sahih Muslim 45"],
+["خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ","The best among you are those who learn the Quran and teach it.","تم میں بہترین وہ ہے جو قرآن سیکھے اور سکھائے۔","Sahih al-Bukhari 5027"],
+["الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ","A Muslim is one from whose tongue and hand other Muslims are safe.","مسلمان وہ ہے جس کی زبان اور ہاتھ سے دوسرے مسلمان محفوظ رہیں۔","Sahih al-Bukhari 10; Sahih Muslim 40"],
+["مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ","Whoever believes in Allah and the Last Day should speak good or keep silent.","جو اللہ اور آخرت کے دن پر ایمان رکھتا ہے وہ اچھی بات کہے یا خاموش رہے۔","Sahih al-Bukhari 6018; Sahih Muslim 47"],
+["الدِّينُ النَّصِيحَةُ","Religion is sincere advice (well-wishing).","دین خیر خواہی کا نام ہے۔","Sahih Muslim 55"]];
+const D=[
+["Morning & Evening","بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ","In the name of Allah, with whose name nothing on earth or in heaven can cause harm; He is the All-Hearing, All-Knowing. (Recite three times.)","اللہ کے نام سے جس کے نام کے ساتھ زمین و آسمان میں کوئی چیز نقصان نہیں دیتی، اور وہ سننے والا جاننے والا ہے۔ (تین بار)","Abu Dawud 5088; Tirmidhi 3388"],
+["Waking up","الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ","All praise is for Allah who gave us life after causing us to die, and to Him is the resurrection.","سب تعریف اللہ کے لیے جس نے ہمیں مارنے کے بعد زندہ کیا اور اسی کی طرف اٹھنا ہے۔","Sahih al-Bukhari 6312"],
+["Before sleeping","اللَّهُمَّ بِاسْمِكَ أَمُوتُ وَأَحْيَا","O Allah, in Your name I die and I live.","اے اللہ! تیرے نام کے ساتھ میں مرتا ہوں اور جیتا ہوں۔","Sahih al-Bukhari 6324"],
+["After eating","الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ","Praise be to Allah who fed us, gave us drink, and made us Muslims.","سب تعریف اللہ کے لیے جس نے ہمیں کھلایا، پلایا اور مسلمان بنایا۔","Abu Dawud 3850; Tirmidhi 3457"],
+["Daily","رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ","Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.","اے ہمارے رب! ہمیں دنیا میں بھلائی دے اور آخرت میں بھلائی دے اور ہمیں آگ کے عذاب سے بچا۔","Quran 2:201"],
+["Daily","رَبِّ زِدْنِي عِلْمًا","My Lord, increase me in knowledge.","اے میرے رب! میرے علم میں اضافہ فرما۔","Quran 20:114"]];
+const A=[
+["The Five Pillars of Islam","Knowledge","Islam is built on five pillars: the declaration of faith (Shahadah), establishing the five daily prayers (Salah), giving charity (Zakah), fasting in Ramadan (Sawm), and pilgrimage to Makkah (Hajj) for those who are able. These acts shape a Muslim’s relationship with Allah and with society."],
+["Prophet Yusuf (peace be upon him)","Prophets","The Quran describes Yusuf’s story in Surah Yusuf as “the best of stories”. Thrown into a well by his brothers, sold into Egypt, and imprisoned unjustly, he remained patient and truthful, and Allah later raised him to a position of authority. The story teaches patience, trust in Allah, and forgiveness."],
+["Prophet Ibrahim (peace be upon him)","Prophets","Ibrahim is known in the Quran as Khalil Allah, the close friend of Allah. He rejected idol worship, called his people to the worship of One God, and, with his son Ismail, raised the foundations of the Ka’bah. His example is remembered in Hajj and Eid al-Adha."],
+["The Hijrah to Madinah","History","In 622 CE, after years of persecution in Makkah, the Prophet Muhammad ﷺ and his companions migrated to Madinah, where the first Muslim community was established. The Islamic (Hijri) calendar begins from this event."],
+["The Conquest of Makkah","History","In 8 AH the Prophet ﷺ entered Makkah with a large force and, rather than seeking revenge, granted general amnesty to its people. The Ka’bah was cleansed of idols and the city came peacefully under Muslim rule."]];
+const N="الرَّحْمَنُ|Ar-Rahman|Most Gracious|نہایت مہربان;الرَّحِيمُ|Ar-Raheem|Most Merciful|بہت رحم والا;الْمَلِكُ|Al-Malik|The King|بادشاہ;الْقُدُّوسُ|Al-Quddus|The Most Holy|نہایت پاک;السَّلَامُ|As-Salam|Source of Peace|سلامتی دینے والا;الْمُؤْمِنُ|Al-Mu’min|Granter of Security|امن دینے والا;الْمُهَيْمِنُ|Al-Muhaymin|The Guardian|نگہبان;الْعَزِيزُ|Al-Azeez|The Almighty|غالب;الْجَبَّارُ|Al-Jabbar|The Compeller|زبردست;الْمُتَكَبِّرُ|Al-Mutakabbir|The Supreme|بڑائی والا;الْخَالِقُ|Al-Khaliq|The Creator|پیدا کرنے والا;الْبَارِئُ|Al-Bari’|The Maker|وجود بخشنے والا;الْمُصَوِّرُ|Al-Musawwir|The Fashioner|صورت بنانے والا;الْغَفَّارُ|Al-Ghaffar|Constant Forgiver|بہت بخشنے والا;الْقَهَّارُ|Al-Qahhar|The Subduer|سب پر غالب;الْوَهَّابُ|Al-Wahhab|The Bestower|بہت عطا کرنے والا;الرَّزَّاقُ|Ar-Razzaq|The Provider|رزق دینے والا;الْفَتَّاحُ|Al-Fattah|The Opener|کھولنے والا;الْعَلِيمُ|Al-Aleem|All-Knowing|سب جاننے والا;الْقَابِضُ|Al-Qabid|The Withholder|تنگی کرنے والا;الْبَاسِطُ|Al-Basit|The Expander|کشادگی دینے والا;الْخَافِضُ|Al-Khafid|The Abaser|پست کرنے والا;الرَّافِعُ|Ar-Rafi’|The Exalter|بلند کرنے والا;الْمُعِزُّ|Al-Mu’izz|Giver of Honour|عزت دینے والا;الْمُذِلُّ|Al-Mudhill|Giver of Dishonour|ذلت دینے والا;السَّمِيعُ|As-Sami’|All-Hearing|سب سننے والا;الْبَصِيرُ|Al-Baseer|All-Seeing|سب دیکھنے والا;الْحَكَمُ|Al-Hakam|The Judge|فیصلہ کرنے والا;الْعَدْلُ|Al-Adl|The Just|عادل;اللَّطِيفُ|Al-Lateef|The Subtle, Kind|باریک بین مہربان;الْخَبِيرُ|Al-Khabeer|All-Aware|باخبر;الْحَلِيمُ|Al-Haleem|The Forbearing|بردبار;الْعَظِيمُ|Al-Azeem|The Magnificent|عظمت والا;الْغَفُورُ|Al-Ghafoor|Oft-Forgiving|بخشنے والا;الشَّكُورُ|Ash-Shakoor|Most Appreciative|قدردان;الْعَلِيُّ|Al-Ali|The Most High|بلند مرتبہ;الْكَبِيرُ|Al-Kabeer|The Most Great|بہت بڑا;الْحَفِيظُ|Al-Hafeez|The Preserver|حفاظت کرنے والا;الْمُقِيتُ|Al-Muqeet|The Sustainer|روزی پہنچانے والا;الْحَسِيبُ|Al-Haseeb|The Reckoner|حساب لینے والا;الْجَلِيلُ|Al-Jaleel|The Majestic|جلال والا;الْكَرِيمُ|Al-Kareem|The Generous|کرم کرنے والا;الرَّقِيبُ|Ar-Raqeeb|The Watchful|نگران;الْمُجِيبُ|Al-Mujeeb|The Responsive|دعا قبول کرنے والا;الْوَاسِعُ|Al-Wasi’|The All-Encompassing|وسعت والا;الْحَكِيمُ|Al-Hakeem|The Wise|حکمت والا;الْوَدُودُ|Al-Wadud|The Loving|محبت کرنے والا;الْمَجِيدُ|Al-Majeed|The Glorious|بزرگی والا;الْبَاعِثُ|Al-Ba’ith|The Resurrector|دوبارہ اٹھانے والا;الشَّهِيدُ|Ash-Shaheed|The Witness|ہر چیز پر گواہ;الْحَقُّ|Al-Haqq|The Truth|حق;الْوَكِيلُ|Al-Wakeel|The Trustee|کارساز;الْقَوِيُّ|Al-Qawiyy|The Strong|طاقتور;الْمَتِينُ|Al-Mateen|The Firm|مضبوط;الْوَلِيُّ|Al-Waliyy|The Protecting Friend|دوست و مددگار;الْحَمِيدُ|Al-Hameed|The Praiseworthy|تعریف کے لائق;الْمُحْصِي|Al-Muhsi|The Counter|شمار کرنے والا;الْمُبْدِئُ|Al-Mubdi’|The Originator|پہلی بار پیدا کرنے والا;الْمُعِيدُ|Al-Mu’eed|The Restorer|دوبارہ پیدا کرنے والا;الْمُحْيِي|Al-Muhyi|Giver of Life|زندگی دینے والا;الْمُمِيتُ|Al-Mumeet|Giver of Death|موت دینے والا;الْحَيُّ|Al-Hayy|The Ever-Living|ہمیشہ زندہ;الْقَيُّومُ|Al-Qayyoom|The Self-Subsisting|قائم رکھنے والا;الْوَاجِدُ|Al-Wajid|The Finder|پانے والا;الْمَاجِدُ|Al-Majid|The Noble|بزرگ;الْوَاحِدُ|Al-Wahid|The One|ایک;الْأَحَدُ|Al-Ahad|The Unique|یکتا;الصَّمَدُ|As-Samad|The Eternal Refuge|بے نیاز;الْقَادِرُ|Al-Qadir|The Able|قدرت والا;الْمُقْتَدِرُ|Al-Muqtadir|The Omnipotent|کامل قدرت والا;الْمُقَدِّمُ|Al-Muqaddim|The Expediter|آگے کرنے والا;الْمُؤَخِّرُ|Al-Mu’akhkhir|The Delayer|پیچھے کرنے والا;الْأَوَّلُ|Al-Awwal|The First|سب سے پہلے;الْآخِرُ|Al-Akhir|The Last|سب کے بعد;الظَّاهِرُ|Az-Zahir|The Manifest|ظاہر;الْبَاطِنُ|Al-Batin|The Hidden|پوشیدہ;الْوَالِي|Al-Wali|The Governor|کارساز حاکم;الْمُتَعَالِي|Al-Muta’ali|The Exalted|بہت بلند;الْبَرُّ|Al-Barr|Source of Goodness|احسان کرنے والا;التَّوَّابُ|At-Tawwab|Acceptor of Repentance|توبہ قبول کرنے والا;الْمُنْتَقِمُ|Al-Muntaqim|The Avenger|بدلہ لینے والا;الْعَفُوُّ|Al-Afuww|The Pardoner|معاف کرنے والا;الرَّءُوفُ|Ar-Ra’oof|The Compassionate|نہایت شفیق;مَالِكُ الْمُلْكِ|Malik-ul-Mulk|Owner of Sovereignty|بادشاہی کا مالک;ذُو الْجَلَالِ وَالْإِكْرَامِ|Dhul-Jalali wal-Ikram|Lord of Majesty and Generosity|جلال و اکرام والا;الْمُقْسِطُ|Al-Muqsit|The Equitable|انصاف کرنے والا;الْجَامِعُ|Al-Jami’|The Gatherer|جمع کرنے والا;الْغَنِيُّ|Al-Ghani|The Self-Sufficient|بے نیاز;الْمُغْنِي|Al-Mughni|The Enricher|غنی کرنے والا;الْمَانِعُ|Al-Mani’|The Preventer|روکنے والا;الضَّارُّ|Ad-Darr|The Distresser|نقصان پہنچانے پر قادر;النَّافِعُ|An-Nafi’|The Benefactor|نفع دینے والا;النُّورُ|An-Noor|The Light|نور;الْهَادِي|Al-Hadi|The Guide|ہدایت دینے والا;الْبَدِيعُ|Al-Badi’|The Incomparable Originator|بے مثال موجد;الْبَاقِي|Al-Baqi|The Everlasting|ہمیشہ باقی;الْوَارِثُ|Al-Warith|The Inheritor|وارث;الرَّشِيدُ|Ar-Rasheed|The Guide to the Right Path|راہ دکھانے والا;الصَّبُورُ|As-Saboor|The Patient|بہت صبر والا".split(";").map(x=>x.split("|"));
+
+const $=s=>document.querySelector(s),app=$("#app");
+const cls=(t,ar,en,ur,ref)=>`<div class="card"><div class="ar">${ar}</div><p class="en">${en}</p>${ur?`<div class="ur">${ur}</div>`:""}${ref?`<div class="ref">${ref}</div>`:""}<button class="tb sh" onclick='sh(${JSON.stringify(ar+"\n"+en+(ref?"\n("+ref+")":"")+"\n— Noor-e-Islam")})'>Share</button> <button class="tb sh" onclick='cp(${JSON.stringify(ar+"\n"+en+(ref?"\n("+ref+")":"")+"\n— Noor-e-Islam")})'>Copy</button></div>`;
+const day=Math.floor((new Date()-new Date(new Date().getFullYear(),0,0))/864e5);
+function sh(t){if(navigator.share){navigator.share({text:t}).catch(()=>{})}else{(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>alert("Copied to clipboard"),()=>prompt("Copy:",t))}}
+function cp(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>alert("Copy ho gaya ✓"),()=>prompt("Copy karein:",t))}
+function th(){const r=document.documentElement,d=r.dataset.theme==="dark"||(!r.dataset.theme&&matchMedia("(prefers-color-scheme:dark)").matches);r.dataset.theme=d?"light":"dark"}
+const hc=(h)=>cls(0,h[0],h[1],h[2],h[3]);
+const dc=(d)=>cls(0,d[1],"<b>"+d[0]+":</b> "+d[2],d[3],d[4]);
+const nc=(n,i)=>`<div class="card nm"><div class="ref">${i+1}</div><div class="ar">${n[0]}</div><b>${n[1]}</b><div class="en">${n[2]}</div><div class="ur" style="text-align:center">${n[3]}</div></div>`;
+const ac=a=>`<div class="card"><span class="ref">${a[1]}</span><h3 style="margin:4px 0;color:var(--g)">${a[0]}</h3><p>${a[2]}</p></div>`;
+const R={
+home(){const h=H[day%H.length],d=D[day%D.length];return`<div class="hero"><div class="bis">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><h1>Welcome to Noor-e-Islam</h1><p>Authentic Islamic knowledge — Quran, Hadith, Duas and more.</p><a class="btn" href="#quran">Read Quran</a><a class="btn" href="#hadith">Hadith</a></div>
+<h2>Daily Reminder</h2><div class="grid">${hc(h)}${dc(d)}</div>
+<h2>Featured</h2><div class="grid">${A.slice(0,3).map(ac).join("")}</div>`},
+quran(){return`<h2>The Holy Quran</h2><p>Read the complete Quran with Arabic, Urdu and English on the free, trusted <a href="https://quran.com" target="_blank" rel="noopener">Quran.com</a>. Below are surahs with translation, and the full list of 114 surahs linking to each.</p>`+Q.map(s=>`<h3>${s[0]}</h3><div class="grid">${s[1].map((v,i)=>{v=v.split("|");return cls(0,v[0],v[1],v[2],s[0].split("(")[0]+"· verse "+(i+1))}).join("")}</div>`).join("")+`<h2>All 114 Surahs</h2><div class="srf">${S.map((n,i)=>`<a target="_blank" rel="noopener" href="https://quran.com/${i+1}"><b>${i+1}</b>${n}</a>`).join("")}</div>`},
+hadith(){const h=H[day%H.length];return`<h2>Daily Hadith</h2><div class="grid">${hc(h)}</div><h2>Hadith Collection</h2><div class="grid">${H.map(hc).join("")}</div>`},
+duas(){return`<h2>Duas</h2><div class="tabs">${["All","Morning & Evening","Daily"].map(t=>`<button onclick="ft(this,'${t}')" class="${t=="All"?"on":""}">${t}</button>`).join("")}</div><div class="grid" id="dg">${D.map(dc).join("")}</div>`},
+articles(){return`<h2>Islamic Articles</h2><div class="grid">${A.map(ac).join("")}</div>`},
+names(){return`<h2>99 Names of Allah</h2><div class="grid">${N.map(nc).join("")}</div>`},
+contact(){return`<h2>Contact Us</h2><p>Questions or suggestions? Send us a message — it opens in WhatsApp (0334 8853466).</p><form onsubmit="return wa(this)"><input name="n" placeholder="Your name" required><input name="e" type="email" placeholder="Your email"><textarea name="m" rows="5" placeholder="Your message" required></textarea><button class="btn" style="border:0;cursor:pointer">Send via WhatsApp</button></form><p><a class="btn" href="https://wa.me/923348853466" target="_blank" rel="noopener">WhatsApp: 0334 8853466</a></p>`},
+search(t){t=t.toLowerCase();const m=(...a)=>a.join(" ").toLowerCase().includes(t);const r=[...H.filter(h=>m(...h)).map(hc),...D.filter(d=>m(...d)).map(dc),...A.filter(a=>m(...a)).map(ac),...N.map((n,i)=>m(...n)?nc(n,i):"").filter(Boolean)];const q=S.map((n,i)=>m(n)?`<a target="_blank" rel="noopener" href="https://quran.com/${i+1}"><b>${i+1}</b>${n}</a>`:"").join("");return`<h2>Search: “${t.replace(/</g,"")}”</h2>${q?`<div class="srf">${q}</div>`:""}<div class="grid">${r.join("")||(q?"":"<p>No results found.</p>")}</div>`}};
+function ft(b,t){document.querySelectorAll(".tabs button").forEach(x=>x.classList.toggle("on",x==b));$("#dg").innerHTML=D.filter(d=>t=="All"||d[0]==t).map(dc).join("")}
+function wa(f){const d=new FormData(f);window.open("https://wa.me/923348853466?text="+encodeURIComponent(`Name: ${d.get("n")}\nEmail: ${d.get("e")}\n${d.get("m")}`),"_blank","noopener");return false}
+function go(){const v=$("#q").value.trim();if(v)render("search",v)}
+$("#q").addEventListener("keydown",e=>{if(e.key==="Enter")go()});
+function render(p,a){app.innerHTML=R[p](a);document.querySelectorAll("#nav a,#tab a").forEach(x=>x.classList.toggle("on",x.hash=="#"+p));scrollTo(0,0)}
+const IC={home:"🏠",quran:"📖",hadith:"📜",duas:"🤲",articles:"📰",names:"✨",contact:"💬"};$("#tab").innerHTML=P.map(p=>`<a href="#${p[0]}"><i>${IC[p[0]]}</i>${p[1].replace("99 ","")}</a>`).join("");
+$("#nav").innerHTML=P.map(p=>`<a href="#${p[0]}">${p[1]}</a>`).join("");
+function route(){const h=location.hash.slice(1);render(R[h]&&h!="search"?h:"home")}
+addEventListener("hashchange",route);route();
+if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}
+</script></body></html>
